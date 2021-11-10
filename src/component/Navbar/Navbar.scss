@@ -1,0 +1,117 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: #011936FF;
+    color:#f4fffd;
+
+    .logo-image{
+        padding-left: 20px;
+    }
+
+    .navbar-right{
+        .nav-links{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+
+        .swap,
+        .pool,
+        .connect-wallet,
+        .variant,
+        .hamboger-menue{
+            text-decoration: none;
+            color:#F4FFFDFF;
+            font-size: 18px;
+            padding: 10px 40px;
+            margin: 0px, 20px;
+
+            &:hover{
+                color: #F9DC5CFF;
+              
+            }
+
+            .modal-footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        
+        }
+        
+        
+        .navbar-button{
+            color:#011936FF;
+            background-color: #F9DC5CFF;
+            font-weight: 600;
+            border: none;
+            height: 40px;
+            width: 110%;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 10px;
+
+            &:hover{
+                color:#F4FFFDFF;
+                background-color:rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+
+
+            }
+        
+        
+        }
+        }
+        
+        
+
+    }
+
+
+    
+
+
+
+}
+
+.connect-wallet-modal{
+    background-color:#011936FF;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #f4fffd;
+    text-align: center;
+   
+}
+
+.wallet-items{
+    width: 100%;
+    height: auto;
+
+    .wallet-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 100px;
+            padding: 10px 10px ;
+            
+        }
+
+    }
+
+    span{
+        font-size: 12px;
+    }
+
+   
+}
+
+
