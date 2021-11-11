@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,gBAAgB,EAAE,SAAS;EAC3B,KAAK,EAAC,KAAK;EACX,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,SAAS;CAErB;;AAED,AAAA,UAAU,CAAC,IAAI,CAAA;EACX,OAAO,EAAE,SAAS;CACrB",
+    "sources": [
+        "Data.scss"
+    ],
+    "names": [],
+    "file": "Data.css"
+}

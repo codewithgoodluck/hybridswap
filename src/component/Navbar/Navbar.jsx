@@ -5,19 +5,22 @@ import "./Navbar.scss"
 import algo from "../../images/algo1.png"
 import InstallAlgo from "../../images/InstallAlgo.svg"
 import myAlgo from "../../images/myAlgo.svg"
+import SettingsData from "../Navbar/Data/Data"
 
-
-
-
-const Navbar = () => {
+const Navbar = ({stylechec}) => {
+    // Modal
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    // Settings Toggle
+    const [showSettings, setShowSettings] = useState(false);
+    const handleShowsettings =setShowSettings(true)
     return (
-        <nav className="navbar">
+        <div className="navbar">
             <div className="logo-image">
-                Logo
+              <span>HybridSwap</span>
+                
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
@@ -32,21 +35,20 @@ const Navbar = () => {
                           POOL
                       </li>
                       </Link>
-
-                    <Link to="/connect" className="connect-wallet">
+                    {/* Connect to start wallet */}
+                    <Link to="/connect" className="connect-wallet"> 
                       <li>
-                     
-                      <Button variant="warning" onClick={handleShow}>
+                    <button  className="navbar-button" onClick={handleShow}>
                       CONNECT TO WALLET
-                     </Button>
-                         
-                    <Modal show={show} onHide={handleClose}>
+                    </button>   
+                    <Modal className="modal" show={show} onHide={handleClose}>
                    <Modal.Header closeButton>
                    <div className="connect-wallet-modal">
                    <Modal.Title>Connect a wallet</Modal.Title>
                    </div>
                      
                   </Modal.Header>
+                 
                      <Modal.Body >
                         <div className="wallet-items">
                             <div className="wallet-item">
@@ -71,38 +73,61 @@ const Navbar = () => {
                         </div>
 
                      </Modal.Body>
-                       
+                    <div className=".connect-wallet-footer">
                       <Modal.Footer >
                       <Button variant="warning" onClick={handleClose}>
                        Close
                       </Button>
                        <Button variant="success" onClick={handleClose}>
                       Save Changes
-                   </Button>
+                     </Button>
                     </Modal.Footer>
+                    </div>
+
                      </Modal>
 
                       </li>
                     </Link>
+                    {/* Connect wallet end */}
+
+                    {/* Hamboger Menue */}
                     <Link to="/hamboger" className="hamboger-menue">
                       <li>
-                      <i class="fas fa-bars" ></i>
-                      </li>
-
-                    </Link>
-
-                    <Link to="/" className="swap">
-                      <li>
-                      <i class="fas fa-user-cog"></i>
+                      <i class="fas fa-bars fa-lg" ></i>
                       </li>
                     </Link>
 
+                    {/* Setting */}
+                    
+                    <Link to="/" className="icon-settings">
+                      {/* toggle icon on click */}
+                      <div><li onClick={()=>setShowSettings(!showSettings)}>
+                        <i class="fas fa-user-cog fa-lg">
+                      </i>
+                      </li>
+                      </div>
 
+                      {/* condition to show icon onclick */}
+
+                      {
+                        showSettings?<div className="component-settings">
+                        <SettingsData></SettingsData>
+                        </div>:null
+                      }
+                        
+                      
+                    </Link>
+                    
 
                 </ul>
+                
+
+                
     
             </div>
-        </nav>
+
+        </div>
+        
     )
 }
 

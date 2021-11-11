@@ -3,15 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 100px;
     background-color: #011936FF;
     color:#f4fffd;
 
-    .logo-image{
-        padding-left: 20px;
+    .logo-image {
+        padding-left: 50px;
+        color: #f4fffd;
+        font-size: 15px;
+        margin-bottom: 15px;
     }
 
     .navbar-right{
+        margin-right: 30px;
+        
         .nav-links{
             display: flex;
             justify-content: flex-end;
@@ -22,17 +27,17 @@
         .swap,
         .pool,
         .connect-wallet,
-        .variant,
+        .icon-settings,
         .hamboger-menue{
             text-decoration: none;
             color:#F4FFFDFF;
-            font-size: 18px;
+            font-size: 13px;
             padding: 10px 40px;
             margin: 0px, 20px;
 
             &:hover{
                 color: #F9DC5CFF;
-              
+    
             }
 
             .modal-footer{
@@ -49,11 +54,12 @@
             background-color: #F9DC5CFF;
             font-weight: 600;
             border: none;
-            height: 40px;
+            height: 35px;
             width: 110%;
             cursor: pointer;
             text-align: center;
             border-radius: 10px;
+            font-size: 13px;
 
             &:hover{
                 color:#F4FFFDFF;
@@ -65,17 +71,23 @@
         
         
         }
-        }
-        
-        
+        }   
 
     }
+}
 
+.icon-settings{
+    position: relative;
+}
 
-    
+.component-settings{
+   position:absolute; 
+   top: 0;
+   right: 1px;
+   width: 120px;}
 
-
-
+.modal{
+    background-color:rgb(15, 15, 15);  
 }
 
 .connect-wallet-modal{
@@ -85,8 +97,8 @@
     text-align: center;
     color: #f4fffd;
     text-align: center;
-   
 }
+
 
 .wallet-items{
     width: 100%;
