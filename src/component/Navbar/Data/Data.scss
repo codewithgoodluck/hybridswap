@@ -12,7 +12,57 @@
 
 .desc-icon span{
     padding: 10px 10px; 
+
+    &:hover{
+        cursor: pointer;
+        color: #F9DC5CFF;
+    }
 }
+
+
+.iconDataSetting{
+    background-color: #011936FF;
+    color:white;
+    width: 250px; 
+    margin-top: 40px;
+    height: 300px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+
+
+
+.iconDataSetting h6{
+    width: 100%;
+    color: aliceblue;
+    border-bottom: 1px solid #F9DC5CFF;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.iconDataSetting span{
+    font-size: 15px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+
+.parentSettingIcon button{
+    border: none;
+    margin: 10px 10px;
+   
+    &:hover{
+        color: #F9DC5CFF;
+        background-color: #011936FF;
+    }
+}
+
+
 
 
 

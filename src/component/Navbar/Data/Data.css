@@ -12,4 +12,55 @@
 .desc-icon span {
   padding: 10px 10px;
 }
+
+.desc-icon span:hover {
+  cursor: pointer;
+  color: #F9DC5CFF;
+}
+
+.iconDataSetting {
+  background-color: #011936FF;
+  color: white;
+  width: 250px;
+  margin-top: 40px;
+  height: 300px;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.iconDataSetting h6 {
+  width: 100%;
+  color: aliceblue;
+  border-bottom: 1px solid #F9DC5CFF;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.iconDataSetting span {
+  font-size: 15px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.parentSettingIcon button {
+  border: none;
+  margin: 10px 10px;
+}
+
+.parentSettingIcon button:hover {
+  color: #F9DC5CFF;
+  background-color: #011936FF;
+}
 /*# sourceMappingURL=Data.css.map */

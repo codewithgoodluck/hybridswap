@@ -80,6 +80,13 @@
     position: relative;
 }
 
+.icon-button{
+    width: 0;
+    height: 0;
+    background: rgba(158, 123, 123, 0.0);
+  
+}
+
 .component-settings{
    position:absolute; 
    top: 0;
@@ -106,7 +113,7 @@
 
     .wallet-item{
         display: flex;
-        justify-content: flex-start;
+        justify-omontent: flex-start;
         align-items: center;
         img{
             width: 100px;

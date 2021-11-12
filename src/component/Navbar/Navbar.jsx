@@ -6,6 +6,8 @@ import algo from "../../images/algo1.png"
 import InstallAlgo from "../../images/InstallAlgo.svg"
 import myAlgo from "../../images/myAlgo.svg"
 import SettingsData from "../Navbar/Data/Data"
+import Datasetting from "../Navbar/Data/Datasetting"
+
 
 const Navbar = ({stylechec}) => {
     // Modal
@@ -15,7 +17,11 @@ const Navbar = ({stylechec}) => {
 
     // Settings Toggle
     const [showSettings, setShowSettings] = useState(false);
-    const handleShowsettings =setShowSettings(true)
+    const [showSettingsIcon, setShowSettingsIcon] = useState(false);
+
+    
+   
+
     return (
         <div className="navbar">
             <div className="logo-image">
@@ -35,8 +41,36 @@ const Navbar = ({stylechec}) => {
                           POOL
                       </li>
                       </Link>
-                    {/* Connect to start wallet */}
-                    <Link to="/connect" className="connect-wallet"> 
+              
+                    {/* Connect wallet end */}
+
+                    {/* Hamboger Menue */}
+                    {/* <Link to="/hamboger" className="hamboger-menue">
+                      <li>
+                      <i class="fas fa-user-cog fa-lg" ></i>
+                      </li>
+                    </Link> */}
+                      
+                    
+
+                  {/* Hamboger Menue */}
+                    <span  className="icon-settings" onClick={()=>setShowSettingsIcon (!showSettingsIcon)
+                         }>
+                      {/* toggle icon on click */}
+                      <div>
+                      <i class="fas fa-user-cog fa-lg" ></i>
+                      </div>
+                      {/* condition to show icon onclick */}
+                      {
+                        showSettingsIcon ?
+                        <div className="component-settings">
+                        <Datasetting/>
+                        </div> : null
+                      }
+                    </span>
+
+                      {/* Connect to start wallet */}
+                      <Link to="/connect" className="connect-wallet"> 
                       <li>
                     <button  className="navbar-button" onClick={handleShow}>
                       CONNECT TO WALLET
@@ -46,9 +80,7 @@ const Navbar = ({stylechec}) => {
                    <div className="connect-wallet-modal">
                    <Modal.Title>Connect a wallet</Modal.Title>
                    </div>
-                     
                   </Modal.Header>
-                 
                      <Modal.Body >
                         <div className="wallet-items">
                             <div className="wallet-item">
@@ -69,9 +101,7 @@ const Navbar = ({stylechec}) => {
                              Install AlgoSigner
                              </span>
                             </div>
-
                         </div>
-
                      </Modal.Body>
                     <div className=".connect-wallet-footer">
                       <Modal.Footer >
@@ -83,47 +113,30 @@ const Navbar = ({stylechec}) => {
                      </Button>
                     </Modal.Footer>
                     </div>
-
                      </Modal>
-
                       </li>
                     </Link>
-                    {/* Connect wallet end */}
 
-                    {/* Hamboger Menue */}
-                    <Link to="/hamboger" className="hamboger-menue">
-                      <li>
-                      <i class="fas fa-bars fa-lg" ></i>
-                      </li>
-                    </Link>
+
+
 
                     {/* Setting */}
-                    
-                    <Link to="/" className="icon-settings">
+                    <span  className="icon-settings" onClick={()=>setShowSettings(!showSettings)
+                         }>
                       {/* toggle icon on click */}
-                      <div><li onClick={()=>setShowSettings(!showSettings)}>
-                        <i class="fas fa-user-cog fa-lg">
-                      </i>
-                      </li>
+                      <div>
+                      <i class="fas fa-bars fa-lg" ></i>
                       </div>
-
                       {/* condition to show icon onclick */}
-
                       {
-                        showSettings?<div className="component-settings">
-                        <SettingsData></SettingsData>
-                        </div>:null
+                        showSettings ?
+                        <div className="component-settings">
+                          {console.log(showSettings)}
+                        <SettingsData/>
+                        </div> : null
                       }
-                        
-                      
-                    </Link>
-                    
-
+                    </span>
                 </ul>
-                
-
-                
-    
             </div>
 
         </div>

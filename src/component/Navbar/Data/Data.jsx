@@ -1,11 +1,8 @@
-import "../Data/Data.scss"
-
+import "../Data/Data.scss";
 const SettingsData = () => (
     <div  className="settings-data">
         <div>
-
         </div>
-       
             <div className="desc-icon">
             <i class="fas fa-book-medical"></i>
                 <span>FAQ</span>
@@ -36,5 +33,7 @@ const SettingsData = () => (
 
   export default SettingsData;
 
+
+  
 
   

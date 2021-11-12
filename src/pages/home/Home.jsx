@@ -1,39 +1,21 @@
 import React from 'react'
 import { BrowserRouter as Router,Link, Routes, Route } from 'react-router-dom';
-import SettingsData from '../../component/Navbar/Data/Data';
 import Navbar from '../../component/Navbar/Navbar';
 import '../../component/Navbar/Navbar.scss'
-import styled from "styled-components";
-
-// const ContainerParent=styled.div`
-// position:relative;
-// `
-
-// const Container = styled.div`
-// position:absolute;
-// top:70px;
-// right:20px;
-// width:9%;
-// // display:none;
-
-// `
+import imagetwo from "../../images/imageBody/img2.svg"
+import SwaParent from './Swap/SwaParent';
 
 
 
 const Home = () => {
     return (
-        <div>
-
+        <div className="home">
             <Router>
             <Navbar></Navbar>
-           
-            {/* <Container >
-            {/* <SettingsData>
-           
-            </SettingsData> */}
-            {/* </Container> */} 
+            <SwaParent></SwaParent>
             </Router>
-            
+           
+            <img className="img2" src={imagetwo } />
         </div>
     )
 }
