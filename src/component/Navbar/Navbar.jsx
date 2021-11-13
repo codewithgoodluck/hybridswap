@@ -27,7 +27,6 @@ const Navbar = ({stylechec}) => {
         <div className="navbar">
             <div className="logo-image">
               <span>HybridSwap</span>
-                
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
@@ -43,16 +42,6 @@ const Navbar = ({stylechec}) => {
                       </li>
                       </Link>
               
-                    {/* Connect wallet end */}
-
-                    {/* Hamboger Menue */}
-                    {/* <Link to="/hamboger" className="hamboger-menue">
-                      <li>
-                      <i class="fas fa-user-cog fa-lg" ></i>
-                      </li>
-                    </Link> */}
-                      
-
                   {/* setting Menue */}
                     <span  className="icon-settings" onClick={()=>setShowSettingsIcon (!showSettingsIcon)
                          }>
@@ -68,57 +57,6 @@ const Navbar = ({stylechec}) => {
                         </div> : null
                       }
                     </span>
-
-                      {/* Connect to start wallet */}
-                      {/* <Link to="/connect" className="connect-wallet"> 
-                      <li>
-                    <button  className="navbar-button" onClick={handleShow}>
-                      CONNECT TO WALLET
-                    </button>   
-                    <Modal className="modal" show={show} onHide={handleClose}>
-                   <Modal.Header closeButton>
-                   <div className="connect-wallet-modal">
-                   <Modal.Title>Connect a wallet</Modal.Title>
-                   </div>
-                  </Modal.Header>
-                     <Modal.Body >
-                        <div className="wallet-items">
-                            <div className="wallet-item">
-                            <img src={algo} />
-                             <span>
-                             Algorand Mobile Wallet
-                             </span>
-                            </div>
-                            <div className="wallet-item">
-                            <img src={InstallAlgo} />
-                             <span>
-                             My Algo Wallet
-                             </span>
-                            </div>
-                            <div className="wallet-item">
-                            <img src={myAlgo} />
-                             <span>
-                             Install AlgoSigner
-                             </span>
-                            </div>
-                        </div>
-                     </Modal.Body>
-                    <div className=".connect-wallet-footer">
-                      <Modal.Footer >
-                      <Button variant="warning" onClick={handleClose}>
-                       Close
-                      </Button>
-                       <Button variant="success" onClick={handleClose}>
-                      Save Changes
-                     </Button>
-                    </Modal.Footer>
-                    </div>
-                     </Modal>
-                      </li>
-                    </Link> */}
-                    
-                
-
                     {/* hambo */}
                     <span  className="icon-settings" onClick={()=>setShowSettings(!showSettings)
                          }>
@@ -140,6 +78,8 @@ const Navbar = ({stylechec}) => {
             <div className="navbar-right nav-links">
                     <Connect></Connect> 
              </div>
+
+             
 
         </div>
         

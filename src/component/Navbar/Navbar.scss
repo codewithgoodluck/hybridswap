@@ -137,9 +137,20 @@
 
 .imageSwap{
     display: flex;
-    justify-content: space-around;
-    transform: translateY(85%);
-    z-index: -700;
+    justify-content: space-between;
+    transform: translateY(35%);
+    width: auto;
+    height: 20%;
+    z-index: -1000;
+  
+
+    .img{
+        img{
+            height: 80%;
+            width: 80%;
+        }
+        
+    }
     
      
  }

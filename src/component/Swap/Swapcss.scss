@@ -37,11 +37,16 @@
     height: auto;
     position: absolute;
     display: flex;
+    color:#111010;
     justify-content: space-between;
     transform: translateX(50%);
     margin-top: 50px;
-    // z-index: -1;
+    z-index: 800;
       
+}
+
+.connectSwap {
+    z-index: 800;
 }
 
 
@@ -54,12 +59,15 @@
     height: auto;
     border: 1px solid #011936FF;
     border-radius: 10px;
-
+     background-color: #EEEEEE;
+    
     span{
         text-align: center;
-        padding-top: 6px;
+        margin-top: 6px;
+        margin-left: 20px;
         font-size: 20px;
-        border: 1px solid #011936FF;
+        font-weight: bold;
+     
 
 
     }
@@ -76,6 +84,15 @@
     text-align: center;
     font-size: 20px;
     padding-top: 6px; 
+    background-color: #EEEEEE;
+
+    span{
+        font-size: 20px;
+        font-weight: bold;
+     
+    }
+
+
 }
 
 .swapIcon{
@@ -85,6 +102,7 @@
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+    z-index: 500;
     
 }
 
@@ -115,6 +133,84 @@ form{
     margin: 50px 30px;
 
 }
+
+// .........................
+
+.changeClass{
+    transform: translateX(400px);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 48%;
+    height: auto;
+    border: 1px solid #011936FF;
+    border-radius: 10px;
+     background-color: #EEEEEE;;
+
+    
+   
+}
+
+
+
+
+.changeClassTo{
+    transform: translateX(-400px);
+    position: absolute;
+    width: 48%;
+    height: auto;
+    border: 1px solid #011936FF;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 6px; 
+    background-color: #EEEEEE;;
+
+}
+
+.swapInnerParentChange{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid #011936FF;
+    border-radius: 10px;
+     background-color: #EEEEEE;
+
+     span{
+        font-size: 20px;
+        font-weight: bold;
+     
+    }
+
+   
+
+}
+
+
+.swapInnerParentChange{
+    width: 100%;
+    height: auto;
+    border: 1px solid #011936FF;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 6px; 
+    background-color: #EEEEEE;
+    span{
+        font-size: 20px;
+        font-weight: bold;
+     
+    }
+
+}
+
+
+
 
 
 
