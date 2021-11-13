@@ -7,6 +7,7 @@ import InstallAlgo from "../../images/InstallAlgo.svg"
 import myAlgo from "../../images/myAlgo.svg"
 import SettingsData from "../Navbar/Data/Data"
 import Datasetting from "../Navbar/Data/Datasetting"
+import Connect from '../Wallet/Connect'
 
 
 const Navbar = ({stylechec}) => {
@@ -51,13 +52,12 @@ const Navbar = ({stylechec}) => {
                       </li>
                     </Link> */}
                       
-                    
 
-                  {/* Hamboger Menue */}
+                  {/* setting Menue */}
                     <span  className="icon-settings" onClick={()=>setShowSettingsIcon (!showSettingsIcon)
                          }>
                       {/* toggle icon on click */}
-                      <div>
+                      <div >
                       <i class="fas fa-user-cog fa-lg" ></i>
                       </div>
                       {/* condition to show icon onclick */}
@@ -70,7 +70,7 @@ const Navbar = ({stylechec}) => {
                     </span>
 
                       {/* Connect to start wallet */}
-                      <Link to="/connect" className="connect-wallet"> 
+                      {/* <Link to="/connect" className="connect-wallet"> 
                       <li>
                     <button  className="navbar-button" onClick={handleShow}>
                       CONNECT TO WALLET
@@ -115,12 +115,11 @@ const Navbar = ({stylechec}) => {
                     </div>
                      </Modal>
                       </li>
-                    </Link>
+                    </Link> */}
+                    
+                
 
-
-
-
-                    {/* Setting */}
+                    {/* hambo */}
                     <span  className="icon-settings" onClick={()=>setShowSettings(!showSettings)
                          }>
                       {/* toggle icon on click */}
@@ -138,6 +137,9 @@ const Navbar = ({stylechec}) => {
                     </span>
                 </ul>
             </div>
+            <div className="navbar-right nav-links">
+                    <Connect></Connect> 
+             </div>
 
         </div>
         

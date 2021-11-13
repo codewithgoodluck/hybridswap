@@ -15,11 +15,11 @@
     }
 
     .navbar-right{
-        margin-right: 30px;
+        margin-right: 10px;
         
         .nav-links{
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             list-style: none;
             cursor: pointer;
@@ -34,6 +34,7 @@
             font-size: 13px;
             padding: 10px 40px;
             margin: 0px, 20px;
+
 
             &:hover{
                 color: #F9DC5CFF;
@@ -78,6 +79,7 @@
 
 .icon-settings{
     position: relative;
+    z-index: 1000;
 }
 
 .icon-button{
@@ -113,7 +115,7 @@
 
     .wallet-item{
         display: flex;
-        justify-omontent: flex-start;
+    
         align-items: center;
         img{
             width: 100px;
@@ -132,5 +134,17 @@
 
    
 }
+
+.imageSwap{
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(85%);
+    z-index: -700;
+    
+     
+ }
+
+ 
+ 
 
 
