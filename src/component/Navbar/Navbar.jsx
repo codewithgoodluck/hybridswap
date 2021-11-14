@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {Link} from "react-router-dom"
 import {Button,Modal} from "react-bootstrap"
 import "./Navbar.scss"
+import hybridswaplogo from "../../images/hybridswaplog.png"
 import algo from "../../images/algo1.png"
 import InstallAlgo from "../../images/InstallAlgo.svg"
 import myAlgo from "../../images/myAlgo.svg"
@@ -26,7 +27,8 @@ const Navbar = ({stylechec}) => {
     return (
         <div className="navbar">
             <div className="logo-image">
-              <span>HybridSwap</span>
+              {/* <span>HybridSwap</span> */}
+              <img src={hybridswaplogo } alt="" />
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
@@ -58,7 +60,8 @@ const Navbar = ({stylechec}) => {
                       }
                     </span>
                     {/* hambo */}
-                    <span  className="icon-settings" onClick={()=>setShowSettings(!showSettings)
+                    <span  className="icon-settings" onClick={()=>setShowSettings(!showSettings, "navbarAnimation")
+                            
                          }>
                       {/* toggle icon on click */}
                       <div>

@@ -4,14 +4,27 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    background-color: #011936FF;
-    color:#f4fffd;
+    background-color: #5d616c;
+    
+    color: #acbbc0;
+    transition: transform 250ms ease-in-out;
+
 
     .logo-image {
         padding-left: 50px;
-        color: #f4fffd;
+        // color: #f4fffd;
+        color: #acbbc0;
         font-size: 15px;
-        margin-bottom: 15px;
+        width: 40%;
+        height: 40%;
+        margin-bottom: 60px;
+
+        img{
+            width: 100px;
+            height: 80px;
+
+        }
+        
     }
 
     .navbar-right{
@@ -77,6 +90,12 @@
     }
 }
 
+
+
+.navbarAnimation{
+    transform: translateY(-1000px);
+}
+
 .icon-settings{
     position: relative;
     z-index: 1000;
@@ -106,6 +125,10 @@
     text-align: center;
     color: #f4fffd;
     text-align: center;
+    
+    &:hover{
+        background-color: #5d616c;
+    }
 }
 
 
