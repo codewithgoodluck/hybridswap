@@ -1,11 +1,11 @@
 
 .navbar{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     background-color: #5d616c;
-    
     color: #acbbc0;
     transition: transform 250ms ease-in-out;
 
@@ -28,14 +28,14 @@
     }
 
     .navbar-right{
-        margin-right: 10px;
-        
+     
         .nav-links{
             display: flex;
             justify-content: center;
             align-items: center;
             list-style: none;
             cursor: pointer;
+            
 
         .swap,
         .pool,
@@ -45,8 +45,8 @@
             text-decoration: none;
             color:#F4FFFDFF;
             font-size: 13px;
-            padding: 10px 40px;
-            margin: 0px, 20px;
+            padding: 10px 25px;
+            margin: 0px, 10px;
 
 
             &:hover{
@@ -74,6 +74,8 @@
             text-align: center;
             border-radius: 10px;
             font-size: 13px;
+            margin-bottom: 10px;
+            margin-right: 10px;
 
             &:hover{
                 color:#F4FFFDFF;

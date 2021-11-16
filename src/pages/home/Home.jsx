@@ -12,8 +12,8 @@ function Home() {
         <div className="home">
             <Router>
                 <Navbar></Navbar>
-                <Swap></Swap>
-                {/* <Pool></Pool> */}
+                {/* <Swap></Swap> */}
+                <Pool></Pool>
             </Router>
         <div className="imageSwap">
             <div className="img">

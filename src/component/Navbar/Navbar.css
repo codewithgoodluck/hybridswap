@@ -9,28 +9,39 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
-  background-color: #011936FF;
-  color: #f4fffd;
+  background-color: #5d616c;
+  color: #acbbc0;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 .navbar .logo-image {
   padding-left: 50px;
-  color: #f4fffd;
+  color: #acbbc0;
   font-size: 15px;
-  margin-bottom: 15px;
+  width: 40%;
+  height: 40%;
+  margin-bottom: 60px;
+}
+
+.navbar .logo-image img {
+  width: 100px;
+  height: 80px;
 }
 
 .navbar .navbar-right {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .navbar .navbar-right .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,8 +104,14 @@
   cursor: pointer;
 }
 
+.navbarAnimation {
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+}
+
 .icon-settings {
   position: relative;
+  z-index: 1000;
 }
 
 .icon-button {
@@ -123,6 +140,10 @@
   text-align: center;
 }
 
+.connect-wallet-modal:hover {
+  background-color: #5d616c;
+}
+
 .wallet-items {
   width: 100%;
   height: auto;
@@ -132,7 +153,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-omontent: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -149,5 +169,24 @@
 
 .wallet-items span {
   font-size: 12px;
+}
+
+.imageSwap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateY(35%);
+          transform: translateY(35%);
+  width: auto;
+  height: 20%;
+  z-index: -1000;
+}
+
+.imageSwap .img img {
+  height: 80%;
+  width: 80%;
 }
 /*# sourceMappingURL=Navbar.css.map */

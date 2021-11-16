@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {Link} from "react-router-dom"
 import {Button,Modal} from "react-bootstrap"
 import "./Navbar.scss"
-import hybridswaplogo from "../../images/hybridswaplog.png"
+import hybridswaplogo from "../../images/logowhite.png"
 import algo from "../../images/algo1.png"
 import InstallAlgo from "../../images/InstallAlgo.svg"
 import myAlgo from "../../images/myAlgo.svg"
@@ -32,6 +32,16 @@ const Navbar = ({stylechec}) => {
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
+                <Link to="/" className="swap">
+                      <li>
+                          HybridPad
+                          <span> <i class="fas fa-rocket fa-lg"></i></span>
+                         
+                      </li>
+                     
+                    </Link>
+
+
                     <Link to="/" className="swap">
                       <li>
                           SWAP
@@ -43,6 +53,16 @@ const Navbar = ({stylechec}) => {
                           POOL
                       </li>
                       </Link>
+
+                      <Link to="/pool" className="pool">
+                      <li>
+                      ANALYTICS
+                      </li>
+                      </Link>
+
+
+
+                     
               
                   {/* setting Menue */}
                     <span  className="icon-settings" onClick={()=>setShowSettingsIcon (!showSettingsIcon)
@@ -78,9 +98,10 @@ const Navbar = ({stylechec}) => {
                     </span>
                 </ul>
             </div>
-            <div className="navbar-right nav-links">
+            <div className="navbar-right connect-wallect nav-links">
                     <Connect></Connect> 
              </div>
+      
 
              
 
