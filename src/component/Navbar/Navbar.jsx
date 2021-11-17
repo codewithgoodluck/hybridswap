@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Link} from "react-router-dom"
+import { BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
 import {Button,Modal} from "react-bootstrap"
 import "./Navbar.scss"
 import hybridswaplogo from "../../images/logowhite.png"
@@ -27,8 +27,10 @@ const Navbar = ({stylechec}) => {
     return (
         <div className="navbar">
             <div className="logo-image">
-              {/* <span>HybridSwap</span> */}
-              <img src={hybridswaplogo } alt="" />
+             <Link to="/">
+                  <img src={hybridswaplogo } alt="" />
+                </Link>
+              
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
@@ -38,31 +40,27 @@ const Navbar = ({stylechec}) => {
                           <span> <i class="fas fa-rocket fa-lg"></i></span>
                          
                       </li>
-                     
+
                     </Link>
 
-
-                    <Link to="/" className="swap">
-                      <li>
+                    <li>
+                    <Link to="/swap" className="swap">
                           SWAP
-                      </li>
                     </Link>
-
+                    </li>
+                    <li>
                     <Link to="/pool" className="pool">
-                      <li>
-                          POOL
-                      </li>
-                      </Link>
+                       POOL
+                    </Link>
+                    </li>
 
-                      <Link to="/pool" className="pool">
-                      <li>
-                      ANALYTICS
-                      </li>
-                      </Link>
-
-
-
-                     
+                    <li>
+                    <Link to="/analytics" className="pool">
+                    ANALYTICS
+                    </Link>
+                    </li>
+                    
+                   
               
                   {/* setting Menue */}
                     <span  className="icon-settings" onClick={()=>setShowSettingsIcon (!showSettingsIcon)

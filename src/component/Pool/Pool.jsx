@@ -7,7 +7,7 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 const Pool = () => {
 
   const poolsDatas =[
-    {name:"USDC / ALGO", tvl:"$7.34M", volume24H:"$825.95K", volume7D:"$8.39M", fees24H:"$2.49K"},
+    {name:"USDC/ALGO", tvl:"$7.34M", volume24H:"$825.95K", volume7D:"$8.39M", fees24H:"$2.49K"},
     {name:"USDC / ALGO", tvl:"$7.34M", volume24H:"$825.95K", volume7D:"$8.39M", fees24H:"$2.49K"},
     {name:"USDC / ALGO", tvl:"$7.34M", volume24H:"$825.95K", volume7D:"$8.39M", fees24H:"$2.49K"}
   ]

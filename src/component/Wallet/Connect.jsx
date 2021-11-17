@@ -21,7 +21,7 @@ const Connect = () => {
     return (
         <div className="navbar-right nav-links">
              {/* Connect to start wallet */}
-             <Link to="/connect" className="connect-wallet"> 
+             <Link to="/swap" className="connect-wallet"> 
                     <button  className="navbar-button" onClick={handleShow}>
                       CONNECT TO WALLET
                     </button>   
